@@ -7,7 +7,7 @@ class Kick extends Command {
       name: "kick",
       description: "Kicker un membre !",
       usage: "kick",
-      permLevel: "Admin",
+      permLevel: "L'acide Adminique",
       category: "Administration"
     });
   }
