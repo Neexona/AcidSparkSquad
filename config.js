@@ -1,6 +1,6 @@
 const config = {
   defaultSettings: {
-    prefix: "l!",
+    prefix: "ac!",
     modLogChannel: "logs",
     modRole: "Modo",
     adminRole: "Admin",
