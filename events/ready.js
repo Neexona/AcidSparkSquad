@@ -11,8 +11,8 @@ module.exports = class {
       this.bot.appInfo = await this.bot.fetchApplication();
     }, 60000);
 
-    this.bot.user.setActivity("être une Déesse !");
+    this.bot.user.setActivity("ac!help pour avoir de l'aide !");
 
-    this.bot.logger.log(`${this.bot.user.username} est prête !`, "ready");
+    this.bot.logger.log(`${this.bot.user.username} est prêt !`, "ready");
   }
 };
