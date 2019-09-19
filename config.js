@@ -10,7 +10,7 @@ const config = {
     { level: 0, name: "Utilisateur", check: () => true },
     {
       level: 1,
-      name: "Modo",
+      name: "L'acide Modolide",
       check: message => {
         try {
           const modRole = message.guild.roles.find(
@@ -24,7 +24,7 @@ const config = {
     },
     {
       level: 2,
-      name: "Admin",
+      name: "L'acide Adminique",
       check: message => {
         try {
           const adminRole = message.guild.roles.find(
@@ -39,7 +39,7 @@ const config = {
     },
     {
       level: 3,
-      name: "Fondateur",
+      name: "L'acide Créatylique",
       check: message => message.client.appInfo.owner.id === message.author.id
     }
   ]
