@@ -7,7 +7,7 @@ class Ban extends Command {
       name: "ban",
       description: "Ban un membre !",
       usage: "ban",
-      permLevel: "Admin",
+      permLevel: "L'acide Adminique",
       category: "Administration"
     });
   }
