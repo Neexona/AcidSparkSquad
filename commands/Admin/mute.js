@@ -7,7 +7,7 @@ class Mute extends Command {
       name: "mute",
       description: "Mute un membre !",
       usage: "mute",
-      permLevel: "Admin",
+      permLevel: "L'acide Modolide",
       category: "Administration"
     });
   }
