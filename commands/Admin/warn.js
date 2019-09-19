@@ -7,7 +7,7 @@ class Warn extends Command {
       name: "warn",
       description: "Wran un membre !",
       usage: "warn",
-      permLevel: "Admin",
+      permLevel: "L'acide Modolide",
       category: "Administration"
     });
   }
