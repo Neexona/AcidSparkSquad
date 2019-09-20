@@ -2,8 +2,9 @@ const config = {
   defaultSettings: {
     prefix: "ac!",
     modLogChannel: "logs",
-    modRole: "Modo",
-    adminRole: "Admin",
+    modRole: "L'acide Modolide",
+    adminRole: "L'acide Adminique",
+    creaRole: "L'acide Créatylique",
     systemNotice: true
   },
   permLevels: [
@@ -37,10 +38,20 @@ const config = {
         }
       }
     },
-    {
+{
       level: 3,
       name: "L'acide Créatylique",
-      check: message => message.client.appInfo.owner.id === message.author.id
+      check: message => {
+        try {
+          const creaRole = message.guild.roles.find(
+            r =>
+              r.name.toLowerCase() === message.settings.creaRole.toLowerCase()
+          );
+          if (creaRole && message.member.roles.has(creaRole.id)) return true;
+        } catch (e) {
+          return false;
+        }
+      }
     }
   ]
 };
