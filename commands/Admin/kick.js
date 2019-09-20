@@ -36,7 +36,7 @@ class Kick extends Command {
       .addField("Channel", message.channel)
       .addField("Raison", kickedReason);
 
-    let kickChannel = message.guild.channels.find(`name`, "reports");
+    let kickChannel = message.guild.channels.find(`name` + "reports");
     if (!kickChannel)
       return message.channel.send(
         "Le salon 'reports' est introuvable. Veuillez créer ce canal !"
