@@ -45,7 +45,7 @@ class Ban extends Command {
     message.delete();
     message.guild.member(bannedUser).ban(bannedReason);
     banChannel.send(banEmbed);
-    message.channel.send(`<@${bannedUser.id}> à été warn ! Raison : `, bannedReason);
+    message.channel.send(`<@${bannedUser.id}> à été warn ! Raison : ` + bannedReason);
   };
 }
 
