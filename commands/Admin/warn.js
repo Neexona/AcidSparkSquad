@@ -59,7 +59,7 @@ class Warn extends Command {
     }
 
     await warnedUser.addRole(warnRole.id);
-    message.channel.send(`<@${warnedUser.id}> à été warn !`);
+    message.channel.send(`<@${warnedUser.id}> à été warn ! Raison : `, warnedReason);
   };
 }
 
