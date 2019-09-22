@@ -45,7 +45,7 @@ class Kick extends Command {
   message.delete();
   message.guild.member(kickedUser).kick(kickedReason);
   kickChannel.send(kickEmbed);
-    message.channel.send(`<@${kickedUser.id}> à été kick ! Raison : `, kickedReason);
+    message.channel.send(`<@${kickedUser.id}> à été kick ! Raison : ` + kickedReason);
   };
 }
 
